@@ -4,6 +4,8 @@
 
 This app allows you to send form data to an open API and store it into the database
 
+## [Demo](https://feedback-form-data.netlify.app/)
+
 ## Technologies used
 
 ### Client side:
