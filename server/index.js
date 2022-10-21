@@ -14,7 +14,6 @@ app.post('/store-data', (req, res) => {
     email: req.body.email,
     message: req.body.message
   }
-  
   const sql = "INSERT INTO users SET ?";
     
   connection.query(sql, data, (err) => {
