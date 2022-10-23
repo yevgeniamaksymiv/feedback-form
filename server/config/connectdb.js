@@ -7,9 +7,9 @@ const connection = mysql.createPool({
   database: process.env.CLEARDB_DATABASE_DB || 'feedbackform_db'
 });
 
-connection.connect((err) => {
-  if (err) throw err;
-  console.log('MySQL connected');
-});
+// connection.connect((err) => {
+//   if (err) throw err;
+//   console.log('MySQL connected');
+// });
 
 module.exports = connection;
