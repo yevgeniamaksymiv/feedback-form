@@ -55,6 +55,11 @@ export const Textarea = styled.textarea`
   color: #ffffff;
   font: normal 400 18px/18px 'Apercu Arabic Pro';
   padding: 28px 52px;
+  :active {
+    background: #ffffff;
+    color: #fad34f; 
+    transition: all .5s;
+  }
   `;
   
   export const Title = styled.h1`
