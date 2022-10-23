@@ -25,8 +25,7 @@ app.post('/store-data', (req, res) => {
 
   connection.query(sql, data, (err) => {
     if (err) {
-      console.log(err)
-      res.status(503).send('Error');
+      res.status(500).send(`Erorr: ${err}`);
     } else {
       res.status(200).send('Saved');
     }
