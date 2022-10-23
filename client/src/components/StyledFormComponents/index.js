@@ -23,9 +23,7 @@ export const Input = styled.input`
   :-ms-input-placeholder {
     color: #2d2d2d;
   }
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 180%;
+  font: normal 400 18px/180% 'Apercu Arabic Pro';
 `;
 
 export const Textarea = styled.textarea`
@@ -38,7 +36,7 @@ export const Textarea = styled.textarea`
   border: 1px solid #dcdcdc;
   border-radius: 10px;
   margin-bottom: 20px;
-  padding-left: 46px;
+  padding: 30px 15px 15px 46px;
   ::placeholder,
   ::-webkit-textarea-placeholder {
     color: #2d2d2d;
@@ -46,28 +44,21 @@ export const Textarea = styled.textarea`
   :-ms-textarea-placeholder {
     color: #2d2d2d;
   }
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 180%;
-`;
-
-export const Button = styled.button`
+  font: normal 400 18px/180% 'Apercu Arabic Pro';
+  `;
+  
+  export const Button = styled.button`
   box-sizing: border-box;
   background: #fad34f;
   border-radius: 500px;
   border: none;
   color: #ffffff;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
+  font: normal 400 18px/18px 'Apercu Arabic Pro';
   padding: 28px 52px;
-`;
-
-export const Title = styled.h1`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 130%;
+  `;
+  
+  export const Title = styled.h1`
+  font: normal 400 40px/130% 'Apercu Arabic Pro';
   color: #3e3e3e;
   padding-bottom: 30px;
 `;
