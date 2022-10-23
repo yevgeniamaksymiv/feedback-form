@@ -7,10 +7,17 @@ const FormSection = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const API_URI = process.env.REACT_APP_API_URI;
+
+  const axiosInstance = axios.create({
+    baseURL: API_URI || 'http://localhost:8080',
+    crossDomain: true,
+  });
+
   const submitUserData = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/store-data', {
+      await axiosInstance.post('store-data', {
         name: name,
         email: email,
         message: message,
