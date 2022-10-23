@@ -17,7 +17,7 @@ const FormSection = () => {
   const submitUserData = async (e) => {
     e.preventDefault();
     try {
-      await axiosInstance.post('store-data', {
+      await axiosInstance.post('/store-data', {
         name: name,
         email: email,
         message: message,
